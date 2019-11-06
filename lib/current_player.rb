@@ -5,12 +5,12 @@ def turn_count(board)
       turns += 1
     else
     end
+    return turns
   end
-  return turns
 end
 
 def current_player(board)
-if turn_count.odd?(board)
+if turn_count(board)
   return "X"
 else
   return "O"
